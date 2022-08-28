@@ -21,3 +21,36 @@ class _TodoAppState extends State<TodoApp> {
     );
   }
 }
+
+abstract class CrudInterface {
+  void post();
+  void get();
+  void update();
+  void delete();
+}
+
+//http
+
+class HttpService extends CrudInterface {
+  @override
+  void delete() {
+    // TODO: implement delete
+  }
+
+  @override
+  void get() {
+    // TODO: implement get
+  }
+
+  @override
+  void post() {
+    // TODO: implement post
+  }
+
+  @override
+  void update() {
+    // TODO: implement update
+  }
+}
+
+class AuthRepo {}
